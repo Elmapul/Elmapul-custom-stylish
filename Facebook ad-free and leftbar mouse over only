@@ -1,0 +1,38 @@
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("facebook.com")  {
+
+
+#leftCol{
+ opacity: 0;
+ position: absolute;
+   transition: all 0.5s ease 0s, visibility 0s linear 0.5s; /* the last value is the transition-delay for visibility */
+   
+}
+
+
+#leftCol:hover{
+visibility: visible; /* shows sub-menu */
+  opacity: 1;
+  left: 0;
+  transition-delay: 0s; /* this removes the transition delay so the menu will be visible while the other styles transition */
+}
+
+
+#rightCol{
+ opacity: 0;
+
+   transition: all 0.5s ease 0s, visibility 0s linear 0.5s; /* the last value is the transition-delay for visibility */
+   
+}
+
+#pagelet_canvas_nav_content{
+opacity: 0;
+}
+
+
+
+}
+
+/*special thanks to:
+http://stackoverflow.com/questions/20098447/css-only-drop-down-menu-css3-transition */
